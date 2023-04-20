@@ -20,8 +20,8 @@ let package = Package(
             teamIdentifier: "BNB37Q8J6B",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .location),
-            accentColor: .presetColor(.pink),
+            appIcon: .placeholder(icon: .smiley),
+            accentColor: .presetColor(.orange),
             supportedDeviceFamilies: [
                 .pad,
                 .phone
@@ -38,7 +38,10 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "AppModule",
-            path: "."
+            path: ".",
+            resources: [
+                .process("Resources")
+            ]
         )
     ]
 )
